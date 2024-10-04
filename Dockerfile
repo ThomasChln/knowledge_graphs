@@ -25,6 +25,8 @@ run ssh-keyscan gitlab.com >> /root/.ssh/known_hosts
 run git clone https://gitlab.com/thomaschln/psychclust_rmed24.git
                                                     
 run 7z x /epmc_1700_suic_db.xml.7z -o/psychclust_rmed24/inst/extdata            
+
+run R -e "remotes::install_git('https://gitlab.com/thomaschln/ehrdb.git')"  
                                                                                 
 run cd /psychclust_rmed24 && make roxygenise                                    
 run R -e "devtools::install('psychclust_rmed24', dependencies = TRUE)"          
