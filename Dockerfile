@@ -1,5 +1,5 @@
 
-from rocker/shiny-verse:4.3.3
+from rocker/shiny-verse:4.4.1
 run apt-get update && \
   # for vignette and checks
   apt-get install -y --no-install-recommends texlive texlive-latex-recommended texlive-fonts-extra qpdf tidy && \
