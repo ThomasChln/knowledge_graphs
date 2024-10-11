@@ -5,7 +5,7 @@ run apt-get update && apt-get install -y libxml2-dev libglpk-dev unixodbc git p7
 run R -e "install.packages(c('dplyr', 'reshape2', 'RColorBrewer', 'pROC', 'text2vec', 'flexdashboard', 'tidypmc', 'tm', 'R.utils', 'igraph', 'europepmc'))"
                                                                                 
 run R -e "remotes::install_git('https://gitlab.com/thomaschln/opticskxi.git', dependencies = TRUE)"  
-run R -e install.packages('kgraph')"
+run R -e "install.packages('kgraph')"
 run R -e "remotes::install_git('https://gitlab.com/thomaschln/nlpembeds.git')"  
 
 run wget -O /epmc_1700_suic_db.xml.7z "https://www.dropbox.com/scl/fi/49jjes22ldssydzechdch/epmc_1700_suic_db.xml.7z?rlkey=a8j0aj0ov1wxj9c9qjobzof53&st=0qstlgya&dl=0"
