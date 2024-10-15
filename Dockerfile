@@ -16,7 +16,7 @@ run git clone https://gitlab.com/thomaschln/psychclust_rmed24.git
                                                     
 run 7z x /epmc_1700_suic_db.xml.7z -o/psychclust_rmed24/inst/extdata            
 
-run R -e "remotes::install_git('https://gitlab.com/thomaschln/ehrdb.git', ref = 'c1de0dc1dc33840a07137a4785323bf7dedecbb0')"  
+run R -e "remotes::install_git('https://gitlab.com/thomaschln/ehrdb.git', ref = 'e8637c20676b6dc71711d0c6f43cbfc138480253')"  
 
 # from https://github.com/ccb-hms/HarvardInovalonUserGuide
 
