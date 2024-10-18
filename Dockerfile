@@ -6,7 +6,7 @@ run R -e "install.packages(c('dplyr', 'reshape2', 'RColorBrewer', 'pROC', 'text2
                                                                                 
 run R -e "remotes::install_git('https://gitlab.com/thomaschln/opticskxi.git', dependencies = TRUE)"  
 run R -e "install.packages('kgraph')"
-run R -e "remotes::install_git('https://gitlab.com/thomaschln/nlpembeds.git')"  
+run R -e "remotes::install_git('https://gitlab.com/thomaschln/nlpembeds.git', dependencies = TRUE)"  
 
 run wget -O /epmc_1700_suic_db.xml.7z "https://www.dropbox.com/scl/fi/49jjes22ldssydzechdch/epmc_1700_suic_db.xml.7z?rlkey=a8j0aj0ov1wxj9c9qjobzof53&st=0qstlgya&dl=0"
                                                                                 
@@ -16,7 +16,9 @@ run git clone https://gitlab.com/thomaschln/psychclust_rmed24.git
                                                     
 run 7z x /epmc_1700_suic_db.xml.7z -o/psychclust_rmed24/inst/extdata            
 
-run R -e "remotes::install_git('https://gitlab.com/thomaschln/ehrdb.git', ref = 'b7fc4746ab6d288e33a57345eb0bf523ac97d827')"  
+run R -e "install.packages('doFuture')"
+run R -e "remotes::install_git('https://gitlab.com/thomaschln/ehrdb.git', ref = 'b7fc4746ab6d288e33a57345eb0bf523ac97d827', dependencies = TRUE)"  
+
 
 # from https://github.com/ccb-hms/HarvardInovalonUserGuide
 
