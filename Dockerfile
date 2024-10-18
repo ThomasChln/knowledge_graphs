@@ -17,6 +17,7 @@ run git clone https://gitlab.com/thomaschln/psychclust_rmed24.git
 run 7z x /epmc_1700_suic_db.xml.7z -o/psychclust_rmed24/inst/extdata            
 
 run R -e "install.packages('doFuture')"
+run R -e "install.packages('future.callr')"
 run R -e "remotes::install_git('https://gitlab.com/thomaschln/ehrdb.git', ref = 'b7fc4746ab6d288e33a57345eb0bf523ac97d827', dependencies = TRUE)"  
 
 
