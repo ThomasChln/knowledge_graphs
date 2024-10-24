@@ -18,7 +18,7 @@ run 7z x /epmc_1700_suic_db.xml.7z -o/psychclust_rmed24/inst/extdata
 
 run R -e "install.packages('doFuture')"
 run R -e "install.packages('future.callr')"
-run R -e "remotes::install_git('https://gitlab.com/thomaschln/ehrdb.git', ref = 'b7fc4746ab6d288e33a57345eb0bf523ac97d827', dependencies = TRUE)"  
+run R -e "remotes::install_git('https://gitlab.com/thomaschln/ehrdb.git', ref = 'd3922c2e881c608a36299730b2644b7bc9ce07f8', dependencies = TRUE)"  
 
 
 # from https://github.com/ccb-hms/HarvardInovalonUserGuide
